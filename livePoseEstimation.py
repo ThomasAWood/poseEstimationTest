@@ -21,7 +21,8 @@ while cap.isOpened():
         # display the frame
         cv2.imshow('Output', frame)
 
-    except:
+    except Exception as e:
+        print(e)
         break
     if cv2.waitKey(1) == ord('q'):
           break
