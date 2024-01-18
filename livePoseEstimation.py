@@ -13,7 +13,8 @@ while cap.isOpened():
     try: 
         # process the frame for pose detection
         pose_results = pose.process(frame)
-        # print(pose_results.pose_landmarks)
+        
+        print(pose_results.pose_landmarks)
          
         # draw skeleton on the frame
         mp_drawing.draw_landmarks(frame, pose_results.pose_landmarks, mp_pose.POSE_CONNECTIONS)
