@@ -1,18 +1,15 @@
-# poseEstimationTest
-A quick test of live pose estimation
-Uses openCV for the camera and Mediapipe for the Pose Estimation
+# Pose Estimation
 
 # Setup
-Make sure you have openCV and Mediapipe installed
+1. Install OpenCV and Mediapipe.
+2. Download the Mediapipe pose estimation model
 
 ```
 pip install opencv-python
 pip install mediapipe
+wget https://storage.googleapis.com/mediapipe-models/pose_landmarker/pose_landmarker_full/float16/latest/pose_landmarker_full.task
 ```
 
 # Useful Links
-https://www.hackersrealm.net/post/realtime-human-pose-estimation-using-python
-
-https://github.com/google/mediapipe/blob/master/docs/solutions/pose.md
-
-https://docs.opencv.org/3.4/d6/d00/tutorial_py_root.html
+https://developers.google.com/mediapipe/solutions/vision/pose_landmarker
+https://developers.google.com/mediapipe/solutions/vision/pose_landmarker/python
